@@ -19,10 +19,14 @@ def progHeader():
     print()
 
 progHeader()
-    
-num = int(input('Enter a number: '))
+
+try:
+    num = int(input('Enter a number: '))
+except ValueError:
+    print('Only Integer Values are allowed')    
+
 print()
-print('******* Your Collatz Numbers are *************')
+print('********* Your Collatz Numbers are *************')
 
 count = num
 while count!=1:
