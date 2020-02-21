@@ -1,0 +1,27 @@
+URI: https://eagpvps96.oam.test.eeint.co.uk:51449/compas/ProvisionServlet
+Content-type:application/x-www-form-urlencoded; charset=UTF-8
+Connection:Keep-Alive
+Cache-Control:no-cache
+provRequest=<Provisioning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <Request>
+                       <Header>
+                           <Command>Modify</Command>
+                           <EntityIdentifiers>
+                               <Identifier Type="TelephoneNumber" Value="447996260058"/> 
+                           </EntityIdentifiers>
+                           <EntityName>Subscriber</EntityName>
+                       </Header>
+                       <Data>
+                           <Subscriber>
+                               <SubscriberDomainName>EE</SubscriberDomainName>  
+                                   <SubscriberCosName>CAT220</SubscriberCosName> 
+                           </Subscriber>
+                       </Data>
+                   </Request>
+               </Provisioning>
+HTTP MESSAGE RECEIVED:
+200 : HTTP/1.1 200 OK
+<?xml version="1.0" encoding="UTF-8"?><Provisioning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Response><Header><EntityIdentifiers><Identifier Type="TelephoneNumber" Value="447996260058"/></EntityIdentifiers><EntityName>Subscriber</EntityName><ResponseStatus>Success</ResponseStatus><Information><Info ComponentName="CPE"><Code>35001002</Code><Description>Request was forwarded to target SPM SPM.EAGTPVNS94.orangeanswerphone.co.uk</Description></Info></Information></Header></Response></Provisioning>
+
+NORMAL SUCCESSFUL COMPLETION
+============================
