@@ -1,0 +1,5 @@
+{ NAC,txn=xxxxx,seq=xxxxx,rsd=0,pty=0,usr=xxxxx,sod=xxxx }  { MSISDN_o=xxxxx,LID=xxxxx }  { BAS_a { n!IMSI=234307996260058,DB=V,MP=A,CH=EEONE,CLI=AA,BAN=143457697,PP=X19A24H89,SE=CUST,IMEI=111111111111112,SSN=89443001079962600580,BC=12,ATP=YC }  }  { CBARS_a { n!OPT=PRE&PRI }  }  { CF_a { n!OPT=A }  { t!Fnum=VMS,BSG=A,TYPE=CFS }  }  { ROAM_a { n!TYPE=S&SG }  }  { CAW_a { t!SW=1 }  }  { HOLD_a }  { TMS_a { n!TYPE=MO&MT }  }  { VMS_a { n!TYP=5320,ADSV=CRT&GRP,POSTC=CV14ED,AUTOPROV=1 }  }  { INF_a { n!OPT=AMZV3&FUP+POL=8001&EAPWFI&AUGC&MISP+QOS=1303&IMS }  }  { PDATA_a } 
+
+
+
+
