@@ -1,0 +1,13 @@
+<config>
+	<NAC>
+		<RequestFile>
+			<Path>C:\Users\agarwalsarthak\Desktop\Validator\files\XMLValidation\Request File.txt</Path>
+		</RequestFile>
+		<LogFile type="SVAS">
+			<Path>C:\Users\agarwalsarthak\Desktop\Validator\files\XMLValidation\SVAS.txt</Path>
+		</LogFile>
+		<LogFile type="HSS">
+			<Path>C:\Users\agarwalsarthak\Desktop\Validator\files\XMLValidation\HSSLogs.xml</Path>
+		</LogFile>
+	</NAC>
+</config>
