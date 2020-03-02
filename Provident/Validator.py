@@ -24,12 +24,18 @@ for logFile in logFiles:
         hss_log_path = logFile.find('Path').text
 
 logger.info("Reading content from indentified files")
-request_content = readFile(request_file_path)
-svas_content = readFile(svas_log_path)
-hss_content = readFile(hss_log_path)
 
-if("INF_a" in request_content):
-    INF_Validation(request_content,svas_content)
-    
-if("HOLD_a" in request_content):
-    HOLD_Validation(request_content,svas_content,hss_content)
+def validator(files):
+	request_file_path = files['req']
+	svas_log_path = files['svas']
+	hss_log_path = files['hss']
+	
+	request_content = readFile(request_file_path)
+	svas_content = readFile(svas_log_path)
+	hss_content = readFile(hss_log_path)
+
+	if("INF_a" in request_content):
+		INF_Validation(request_content,svas_content)
+		
+	if("HOLD_a" in request_content):
+		HOLD_Validation(request_content,svas_content,hss_content)
